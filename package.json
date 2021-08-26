@@ -1,0 +1,23 @@
+{
+  "name": "electron-test",
+  "version": "1.0.0",
+  "description": "An Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Antinoid",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^12.0.16"
+  },
+  "dependencies": {
+    "console": "^0.7.2",
+    "dialogs": "^2.0.1",
+    "electron-prompt": "^1.6.2",
+    "fs": "0.0.1-security",
+    "smalltalk": "^4.0.7",
+    "socket.io": "^4.1.1",
+    "socket.io-client": "^4.1.2"
+  }
+}

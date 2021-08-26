@@ -1,0 +1,850 @@
+{
+    "startBlock": {
+        "run": "",
+        "id": "startBlock",
+        "name": "Start",
+        "catagory": "hidden",
+        "waitForRun": true,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Out",
+                "type": "run",
+                "connections": []
+            }
+        ],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    },
+    "logBlock": {
+        "run": "",
+        "id": "logBlock",
+        "name": "Log To Console",
+        "catagory": "console",
+        "waitForRun": false,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            },
+            {
+                "type": "value",
+                "name": "Input",
+                "value": "",
+                "taken": false,
+                "read": true,
+                "required": true
+            }
+        ],
+        "outputs": [],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    },
+    "clearLogBlock": {
+        "run": "",
+        "id": "clearLogBlock",
+        "name": "Clear Console",
+        "catagory": "console",
+        "waitForRun": false,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            }
+        ],
+        "outputs": [],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    },
+    "valueBlock": {
+        "run": "",
+        "id": "valueBlock",
+        "name": "Value",
+        "catagory": "storage",
+        "waitForRun": false,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            },
+            {
+                "type": "text",
+                "name": "",
+                "value": "",
+                "taken": true,
+                "read": true,
+                "required": true
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Value Out",
+                "type": "value",
+                "connections": []
+            }
+        ],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    },
+    "waitBlock": {
+        "run": "",
+        "id": "waitBlock",
+        "name": "Wait",
+        "catagory": "time",
+        "waitForRun": false,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            },
+            {
+                "type": "value",
+                "name": "Seconds",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": true
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Out",
+                "type": "run",
+                "connections": []
+            }
+        ],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    },
+    "insBlock": {
+        "run": "",
+        "id": "insBlock",
+        "name": "Ins",
+        "catagory": "node",
+        "waitForRun": true,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            },
+            {
+                "type": "run",
+                "name": "In",
+                "taken": false
+            },
+            {
+                "type": "run",
+                "name": "In",
+                "taken": false
+            },
+            {
+                "type": "run",
+                "name": "In",
+                "taken": false
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Out",
+                "type": "run",
+                "connections": []
+            }
+        ],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    },
+    "ifBlock": {
+        "run": "",
+        "id": "ifBlock",
+        "name": "If",
+        "catagory": "misc",
+        "waitForRun": false,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            },
+            {
+                "type": "value",
+                "name": "Condition",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": true
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Then",
+                "type": "run",
+                "connections": []
+            },
+            {
+                "name": "Else",
+                "type": "run",
+                "connections": []
+            }
+        ],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    },
+    "superiorBlock": {
+        "run": "",
+        "id": "superiorBlock",
+        "name": "Superior",
+        "catagory": "operation",
+        "waitForRun": false,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            },
+            {
+                "type": "value",
+                "name": "Value 1",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": true
+            },
+            {
+                "type": "value",
+                "name": "Value 2",
+                "value": "0",
+                "taken": false,
+                "read": true
+            }
+        ],
+        "outputs": [
+            {
+                "name": "1 > 2",
+                "type": "value",
+                "connections": []
+            }
+        ],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    },
+    "equalBlock": {
+        "run": "",
+        "id": "equalBlock",
+        "name": "Equal",
+        "catagory": "operation",
+        "waitForRun": false,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            },
+            {
+                "type": "value",
+                "name": "Value 1",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": true
+            },
+            {
+                "type": "value",
+                "name": "Value 2",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": true
+            }
+        ],
+        "outputs": [
+            {
+                "name": "1 == 2",
+                "type": "value",
+                "connections": []
+            }
+        ],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    },
+    "incrementBlock": {
+        "run": "",
+        "id": "incrementBlock",
+        "name": "Increment",
+        "catagory": "number",
+        "waitForRun": false,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            },
+            {
+                "type": "value",
+                "name": "In",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": true
+            }
+        ],
+        "outputs": [
+            {
+                "name": "In + 1",
+                "type": "value",
+                "connections": []
+            }
+        ],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    },
+    "decrementBlock": {
+        "run": "",
+        "id": "decrementBlock",
+        "name": "Decrement",
+        "catagory": "number",
+        "waitForRun": false,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            },
+            {
+                "type": "value",
+                "name": "In",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": true
+            }
+        ],
+        "outputs": [
+            {
+                "name": "In - 1",
+                "type": "value",
+                "connections": []
+            }
+        ],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    },
+    "multInBlock": {
+        "run": "",
+        "id": "multInBlock",
+        "name": "Multipal In",
+        "catagory": "node",
+        "waitForRun": false,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            },
+            {
+                "type": "value",
+                "name": "in",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": false
+            },
+            {
+                "type": "value",
+                "name": "in",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": false
+            },
+            {
+                "type": "value",
+                "name": "in",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": false
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Out",
+                "type": "value",
+                "connections": []
+            }
+        ],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    },
+    "randomBlock": {
+        "run": "",
+        "id": "randomBlock",
+        "name": "Random",
+        "catagory": "number",
+        "waitForRun": false,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            },
+            {
+                "type": "value",
+                "name": "Roof",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": true
+            }
+        ],
+        "outputs": [
+            {
+                "name": "btween 0 and roof",
+                "type": "value",
+                "connections": []
+            }
+        ],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    },
+    "varBlock": {
+        "run": "",
+        "id": "varBlock",
+        "name": "Variable",
+        "catagory": "storage",
+        "waitForRun": false,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            },
+            {
+                "type": "value",
+                "name": "Set",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": true
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Var Out",
+                "type": "value",
+                "connections": []
+            }
+        ],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    },
+    "passBlock": {
+        "run": "",
+        "id": "passBlock",
+        "name": "Pass through",
+        "catagory": "node",
+        "waitForRun": false,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            },
+            {
+                "type": "value",
+                "name": "Value",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": true
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Run Out",
+                "type": "run",
+                "connections": []
+            },
+            {
+                "name": "Value Out",
+                "type": "value",
+                "connections": []
+            }
+        ],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    },
+    "loopBlock": {
+        "run": "",
+        "id": "loopBlock",
+        "name": "Loop",
+        "catagory": "misc",
+        "waitForRun": false,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            },
+            {
+                "type": "value",
+                "name": "NumOfTimes",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": true
+            }
+        ],
+        "outputs": [
+            {
+                "name": "loop Out",
+                "type": "run",
+                "connections": []
+            },
+            {
+                "name": "index",
+                "type": "value",
+                "connections": []
+            },
+            {
+                "name": "finished",
+                "type": "run",
+                "connections": []
+            }
+        ],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    },
+    "promptBlock": {
+        "run": "",
+        "id": "promptBlock",
+        "name": "Prompt",
+        "catagory": "user",
+        "waitForRun": false,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            },
+            {
+                "type": "value",
+                "name": "Text",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": true
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Output",
+                "type": "value",
+                "connections": []
+            }
+        ],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    },
+    "alertBlock": {
+        "run": "",
+        "id": "alertBlock",
+        "name": "Alert",
+        "catagory": "user",
+        "waitForRun": false,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            },
+            {
+                "type": "value",
+                "name": "Text",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": true
+            }
+        ],
+        "outputs": [],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    },
+    "addBlock": {
+        "run": "",
+        "id": "addBlock",
+        "name": "Add",
+        "catagory": "number",
+        "waitForRun": false,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            },
+            {
+                "type": "value",
+                "name": "value 1",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": true
+            },
+            {
+                "type": "value",
+                "name": "value 2",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": true
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Val1+Val2",
+                "type": "value",
+                "connections": []
+            }
+        ],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    },
+    "subBlock": {
+        "run": "",
+        "id": "subBlock",
+        "name": "Sub",
+        "catagory": "number",
+        "waitForRun": false,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            },
+            {
+                "type": "value",
+                "name": "value 1",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": true
+            },
+            {
+                "type": "value",
+                "name": "value 2",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": true
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Val1-Val2",
+                "type": "value",
+                "connections": []
+            }
+        ],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    },
+    "addStrBlock": {
+        "run": "",
+        "id": "addStrBlock",
+        "name": "Add Str",
+        "catagory": "text",
+        "waitForRun": false,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            },
+            {
+                "type": "value",
+                "name": "Str 1",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": true
+            },
+            {
+                "type": "value",
+                "name": "Str 2",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": true
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Str1-Str2",
+                "type": "value",
+                "connections": []
+            }
+        ],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    },
+    "getCharBlock": {
+        "run": "",
+        "id": "getCharBlock",
+        "name": "Get Char",
+        "catagory": "text",
+        "waitForRun": false,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            },
+            {
+                "type": "value",
+                "name": "String",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": true
+            },
+            {
+                "type": "value",
+                "name": "Index",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": true
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Char Out",
+                "type": "value",
+                "connections": []
+            }
+        ],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    },
+    "strLen": {
+        "run": "",
+        "id": "strLen",
+        "name": "Str Len",
+        "catagory": "text",
+        "waitForRun": false,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            },
+            {
+                "type": "value",
+                "name": "Str",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": true
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Str Length",
+                "type": "value",
+                "connections": []
+            }
+        ],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    },
+    "swichNodeBlock": {
+        "run": "",
+        "id": "swichNodeBlock",
+        "name": "Swich node",
+        "catagory": "node",
+        "waitForRun": false,
+        "inputs": [
+            {
+                "type": "run",
+                "name": "",
+                "taken": false
+            },
+            {
+                "type": "value",
+                "name": "Any",
+                "value": "0",
+                "taken": false,
+                "read": true,
+                "required": true
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Output",
+                "type": "run",
+                "connections": []
+            }
+        ],
+        "pos": {
+            "x": 10,
+            "y": 10
+        }
+    }
+}
